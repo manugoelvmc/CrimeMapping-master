@@ -1,4 +1,4 @@
-#!/home/manu/Downloads/CrimeMapping-master/env/bin/python
+#!/home/manu/Downloads/CrimeMapping-master/env/bin/python3
 
 import sys
 import json

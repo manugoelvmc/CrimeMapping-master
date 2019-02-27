@@ -1,4 +1,4 @@
-#!/home/manu/Downloads/CrimeMapping-master/env/bin/python
+#!/home/manu/Downloads/CrimeMapping-master/env/bin/python3
 
 # $Id: rst2pseudoxml.py 4564 2006-05-21 20:44:42Z wiemann $
 # Author: David Goodger <goodger@python.org>

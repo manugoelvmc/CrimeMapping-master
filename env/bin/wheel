@@ -1,4 +1,4 @@
-#!/home/manu/Downloads/CrimeMapping-master/env/bin/python
+#!/home/manu/Downloads/CrimeMapping-master/env/bin/python3
 
 # -*- coding: utf-8 -*-
 import re

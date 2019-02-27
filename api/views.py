@@ -216,7 +216,7 @@ def safest_route(request):
 def uploadImage(request):
     received_json_data = json.loads(request.body.decode("utf-8"))
     #print "User: " + received_json_data['user']
-    print "Image: " + received_json_data['image'][0:10]
+    print("Image: " + received_json_data['image'][0:10])
     image = received_json_data['image']
     unique_filename = 'media/' + str(uuid.uuid4()) + ".jpg"
     with open(unique_filename, "wb") as fh:
