@@ -21,6 +21,7 @@ jmespath==0.9.3
 kiwisolver==1.0.1
 lxml==4.1.1
 MarkupSafe==1.0
+numpy==1.16.2
 pathspec==0.5.5
 pkg-resources==0.0.0
 psycopg2==2.7.7
@@ -29,6 +30,7 @@ pytz==2017.3
 PyYAML==3.12
 requests==2.9.1
 semantic-version==2.5.0
+simplejson==3.16.0
 six==1.11.0
 tabulate==0.7.5
 termcolor==1.1.0
