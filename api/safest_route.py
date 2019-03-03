@@ -9,6 +9,9 @@ import numpy as np
 import matplotlib.pyplot as plt 
 import xlrd
 import math
+import urllib.request, json
+import gmaps
+import pandas as pd
 
 
 # Reference: https://stackoverflow.com/questions/20231258/minimum-distance-between-a-point-and-a-line-in-latitude-longitude
@@ -138,18 +141,8 @@ def getPointSafety(point):
 
 
 
-data = pd.read_csv('final_data.csv')
-size = data[data.columns[0]].size
-
-import math
 
 
-    
-import urllib.request, json
-
-
-import gmaps
-import pandas as pd
 # gmaps.configure(api_key='AIzaSyD08BN7gmi_FNMNszEWYoe6y4hzHs570VY')
 # coordinates = (28.664402, 77.124928)
 # gmaps.figure(center=coordinates, zoom_level=20)
@@ -175,6 +168,8 @@ import pandas as pd
 
 
 def get_route(origin, destination):
+    data = pd.read_csv('final_data.csv')
+    size = data[data.columns[0]].size
     plot_crime_points=[]
     endpoint = 'https://maps.googleapis.com/maps/api/directions/json?'
     api_key = 'AIzaSyD08BN7gmi_FNMNszEWYoe6y4hzHs570VY'
@@ -204,7 +199,7 @@ def get_route(origin, destination):
         
         nsteps = len(directions['routes'][i]['legs'][0]['steps'])
         waypoints=[]
-        
+
         for j in range(nsteps):
             point=[]
             point.append(directions['routes'][i]['legs'][0]['steps'][j]['start_location']['lat'])
