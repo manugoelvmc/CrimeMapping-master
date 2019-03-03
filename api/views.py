@@ -102,7 +102,7 @@ def all_reports_markers(request):
         }
         all_reports_array.append(report_json)
 
-    return JsonResponse({"all_reports": json.dummps(all_reports_array)})
+    return JsonResponse({"all_reports": all_reports_array})
 
 
 ''' JSON format
@@ -172,7 +172,7 @@ def reported_crimes(request):
                 'status': report.STATUS
         }
         json_reported_crimes.append(report_json)
-    return JsonResponse({"reported_crimes": json.dumps(json_reported_crimes)})
+    return JsonResponse({"reported_crimes": json_reported_crimes})
 
 
 ''' Input: id (denotes id of crime)

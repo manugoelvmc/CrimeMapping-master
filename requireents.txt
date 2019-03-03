@@ -22,7 +22,6 @@ kiwisolver==1.0.1
 lxml==4.1.1
 MarkupSafe==1.0
 pathspec==0.5.5
-pkg-resources==0.0.0
 psycopg2==2.7.7
 python-dateutil==2.6.1
 pytz==2017.3
