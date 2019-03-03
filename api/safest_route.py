@@ -6,13 +6,11 @@ from crimeReporting.models import *
 
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt 
 import xlrd
 import math
 import urllib.request, json
 import gmaps
 import pandas as pd
-
 
 # Reference: https://stackoverflow.com/questions/20231258/minimum-distance-between-a-point-and-a-line-in-latitude-longitude
 def calculate_distance_from_line(latA, lonA, latB, lonB, latC, lonC):
