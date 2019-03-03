@@ -6,7 +6,6 @@ from crimeReporting.models import *
 
 import pandas as pd
 import numpy as np
-import xlrd
 import math
 import urllib.request, json
 import gmaps
