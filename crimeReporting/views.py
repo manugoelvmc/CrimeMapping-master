@@ -24,7 +24,7 @@ def fir_reg(request):
       form = FirRegistrationForm(request.POST)
       address = request.POST.get('address')
       print (address)
-      
+
       if form.is_valid():
           # print "***********************"
           data = form.save(commit=False)
@@ -59,6 +59,9 @@ def home(request):
     return HttpResponseRedirect("/viewMap/")
   else:
     return render(request, 'home.html')
+
+def geocode(request):
+    return render(request, 'geocode.html')
 
 
 def sign_in_up_view(request):

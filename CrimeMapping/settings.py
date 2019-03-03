@@ -25,7 +25,7 @@ SECRET_KEY = 'i^jb*@$r46qm9=kuxmxo&ze64zu&sq)elw$x41-_)15ozd-q_9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['crimemappingapp.herokuapp.com', '127.0.0.1', '0.0.0.0', '192.168.1.101']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -139,4 +139,3 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Activate Django-Heroku.
 django_heroku.settings(locals())
-
