@@ -181,9 +181,9 @@ def get_route(origin, destination):
     response = urllib.request.urlopen(request).read()
     directions = json.loads(response)
 
-    origin2 = origin1.strip().split(",")
+    origin2 = origin.strip().split(",")
     origin2=[float(x.strip().strip("+")) for x in origin2]
-    destination2 = destination1.strip().split(",")
+    destination2 = destination.strip().split(",")
     destination2=[float(x.strip().strip("+")) for x in destination2]
 
 
